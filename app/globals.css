@@ -53,6 +53,10 @@ a {
   word-break: keep-all;
 }
 
+.about-ko {
+  text-align: left;
+}
+
 .top-en {
   font-family: "Cormorant Garamond", serif;
   font-size: 15px;

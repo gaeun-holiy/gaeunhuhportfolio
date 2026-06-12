@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  background: #edebe6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #edebe6;
+  color: #141413;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  line-height: 16.8px;
+}
+
+::selection {
+  background: #141413;
+  color: #edebe6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.font-en {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  line-height: 16.8px;
+}
+
+.font-kr {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: 16.8px;
+  line-break: strict;
+  overflow-wrap: break-word;
+  text-align: justify;
+  word-break: keep-all;
+}
+
+.top-en {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 16.8px;
+}
+
+.top-kr {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 16.8px;
+  line-break: strict;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 58s linear infinite;
+}
+
+.marquee-kr {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: 16.8px;
+  line-break: strict;
+  overflow-wrap: break-word;
+  word-break: keep-all;
+}
+
+.runtime {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  line-height: 16.8px;
+}
+
+.contact-number {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  line-height: 16.8px;
+}
+
+.caption-ko {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 10pt;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 16.8pt;
+  line-break: strict;
+  overflow-wrap: break-word;
+  text-align: justify;
+  word-break: keep-all;
+}
+
+.caption-en {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 14pt;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16.8pt;
+}
+
+.home-forest-spacer {
+  height: calc(100vh - 28px - 42.11vw);
+  min-height: 150px;
+}
+
+.home-forest {
+  bottom: 28px;
+}

@@ -32,7 +32,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="font-kr absolute left-[511px] top-[242px] w-[434px]">
+        <div className="font-kr absolute left-[511px] top-[242px] w-[434px] text-left">
           <p>허가은</p>
           <br />
           <p>

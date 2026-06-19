@@ -93,10 +93,30 @@ export default async function FilmDetailPage({ params }: FilmPageProps) {
             {film.captionKo && !film.captionKoBlocks ? <p className="caption-ko">{film.captionKo}</p> : null}
             {film.captionEn ? <p className="caption-en pt-[4px]">{film.captionEn}</p> : null}
           </div>
-          <Link href="/films/" className="font-en mt-[33.6px] inline-block">
-            &lt; Back to Films
-          </Link>
         </div>
+
+        {film.characterDesign ? (
+          <section className="mt-[50.4px] w-full">
+            <h2 className="font-en text-[18px] leading-[16.8px]">{film.characterDesign.title}</h2>
+            <p className="font-en mt-[8.4px] text-[14px] leading-[16.8px]">
+              {film.characterDesign.subtitle}
+            </p>
+            <div className="mt-[16.8px] grid w-full grid-cols-2 gap-[8px]">
+              {film.characterDesign.images.map((image) => (
+                <img
+                  key={image}
+                  src={encodeURI(image)}
+                  alt=""
+                  className="block h-auto w-full bg-[#B3B3B3]"
+                />
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        <Link href="/films/" className="font-en mt-[33.6px] inline-block">
+          &lt; Back to Films
+        </Link>
       </section>
     </main>
   );

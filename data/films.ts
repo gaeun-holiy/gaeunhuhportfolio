@@ -15,6 +15,11 @@ export type Film = {
     heading?: string;
     text: string;
   }>;
+  characterDesign?: {
+    title: string;
+    subtitle: string;
+    images: string[];
+  };
   needsMp4Conversion?: boolean;
 };
 
@@ -109,7 +114,12 @@ export const films: Film[] = [
       }
     ],
     captionEn:
-      "An AI-generated film. When Eros, the god of love, withdraws love from the human world, a detective interrogates him — and asks the questions that unsettle everything we believed love to be. The character design departs from the cherubic-angel cliché toward something more human, more striking."
+      "An AI-generated film. When Eros, the god of love, withdraws love from the human world, a detective interrogates him — and asks the questions that unsettle everything we believed love to be. The character design departs from the cherubic-angel cliché toward something more human, more striking.",
+    characterDesign: {
+      title: "Character Design",
+      subtitle: "Main Character Design",
+      images: ["/images/eros_board.png", "/images/detective_board.png"]
+    }
   }
 ];
 

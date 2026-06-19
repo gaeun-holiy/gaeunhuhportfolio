@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ErosDataVisualization } from "@/components/ErosDataVisualization";
 import { PageHeader } from "@/components/PageHeader";
 import { archiveProjects, getArchiveProjectBySlug } from "@/data/archive";
 
@@ -43,9 +44,20 @@ export default async function ArchiveProjectPage({ params }: ArchiveProjectPageP
     <main className="min-h-screen bg-[#EDEBE6] text-[#141413]">
       <PageHeader title={project.title} />
 
+      {project.detailType === "erosVisualization" ? (
+        <>
+          <ErosDataVisualization />
+
+          <section className="mx-auto w-full max-w-[1800px] px-[80px] pb-[33.6px]">
+            <Link href="/archive/" className="font-en inline-block">
+              &lt; Back to Archive
+            </Link>
+          </section>
+        </>
+      ) : (
       <section className="mx-auto w-full max-w-[960px] pt-[116px] leading-none">
         <div className="m-0 block p-0 leading-none">
-          {project.images.map((image) => (
+          {project.images?.map((image) => (
             <img
               key={image}
               src={encodeURI(image)}
@@ -59,6 +71,7 @@ export default async function ArchiveProjectPage({ params }: ArchiveProjectPageP
           &lt; Back to Archive
         </Link>
       </section>
+      )}
     </main>
   );
 }

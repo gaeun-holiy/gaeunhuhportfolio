@@ -118,7 +118,7 @@ export const films: Film[] = [
     characterDesign: {
       title: "Character Design",
       subtitle: "Main Character Design",
-      images: ["/images/eros_board.png", "/images/detective_board.png"]
+      images: ["/images/board2.png"]
     }
   }
 ];

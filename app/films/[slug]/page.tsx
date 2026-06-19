@@ -101,7 +101,7 @@ export default async function FilmDetailPage({ params }: FilmPageProps) {
             <p className="font-en mt-[8.4px] text-[14px] leading-[16.8px]">
               {film.characterDesign.subtitle}
             </p>
-            <div className="mt-[16.8px] grid w-full grid-cols-2 gap-[8px]">
+            <div className="relative left-1/2 mt-[16.8px] w-screen -translate-x-1/2">
               {film.characterDesign.images.map((image) => (
                 <img
                   key={image}

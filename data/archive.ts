@@ -7,7 +7,7 @@ export type ArchiveProject = {
   images: string[];
 };
 
-const gochiImages = Array.from({ length: 11 }, (_, index) => `/images/a ${index + 1}.png`);
+const gochiImages = Array.from({ length: 12 }, (_, index) => `/images/a ${index + 1}.png`);
 
 export const archiveProjects: ArchiveProject[] = [
   {

@@ -92,7 +92,7 @@ export const films: Film[] = [
     titleEn: "EROS!",
     category: "AI Film",
     duration: "10m 30s",
-    thumbnail: "/images/에로스 캐릭터보드.png",
+    thumbnail: "/images/EROS_1.png",
     caption: "An AI-generated film about Eros, the god of love.",
     captionKoBlocks: [
       {

@@ -91,8 +91,10 @@ export const films: Film[] = [
     slug: "eros",
     titleEn: "EROS!",
     category: "AI Film",
-    duration: "10m 30s",
+    duration: "7m 38s",
     thumbnail: "/images/EROS_1.png",
+    youtubeId: "4UpkOex1Z98",
+    videoAspectRatio: "16/9",
     caption: "An AI-generated film about Eros, the god of love.",
     captionKoBlocks: [
       {

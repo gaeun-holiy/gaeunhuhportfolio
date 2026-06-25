@@ -44,10 +44,10 @@ export function ErosDataVisualization() {
   );
 
   return (
-    <section className="relative min-h-screen w-full px-[101px] pb-[80px] pt-[116px] text-[#141413]">
-      <div className="grid grid-cols-[820px_750px] items-start gap-[130px]">
-        <div className="relative min-h-[640px] overflow-visible">
-          <div className="relative w-[820px] max-w-none">
+    <section className="relative min-h-screen w-full overflow-x-hidden px-[101px] pb-[80px] pt-[116px] text-[#141413]">
+      <div className="grid w-full grid-cols-[minmax(0,0.52fr)_minmax(0,0.44fr)] items-start gap-[90px]">
+        <div className="relative min-h-[680px] overflow-visible">
+          <div className="relative w-full max-w-none">
           <img
             src="/images/eros_ascii.svg"
             alt="EROS ASCII figure"
@@ -78,13 +78,13 @@ export function ErosDataVisualization() {
 
         <aside className="relative pt-[212px]">
           <span
-            className={`pointer-events-none absolute left-[-100px] top-[236px] h-px w-[74px] origin-left bg-[#141413]/45 transition-[opacity,transform] duration-1000 ease-in-out ${
+            className={`pointer-events-none absolute left-[-64px] top-[236px] h-px w-[44px] origin-left bg-[#141413]/45 transition-[opacity,transform] duration-1000 ease-in-out ${
               activeBundle ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"
             }`}
           />
 
           <div
-            className={`grid grid-cols-[330px_360px] gap-[60px] transition-all duration-1000 ease-in-out ${
+            className={`grid grid-cols-[330px_minmax(0,1fr)] gap-[56px] transition-all duration-1000 ease-in-out ${
               activeBundle
                 ? "translate-x-0 translate-y-0 opacity-100"
                 : "translate-x-[-18px] translate-y-[8px] opacity-0"
@@ -114,9 +114,9 @@ export function ErosDataVisualization() {
                     const value = activeBundle[field.key];
 
                     return (
-                      <div key={field.key} className="mb-[32px] grid grid-cols-[190px_170px] items-center gap-[28px]">
+                      <div key={field.key} className="mb-[32px] grid grid-cols-[190px_minmax(120px,1fr)] items-center gap-[28px]">
                         <p className="runtime text-[16px] tracking-[0.08em]">{field.label}</p>
-                        <div className="h-[8px] w-[170px] rounded-full bg-[#D8D6D0]">
+                        <div className="h-[8px] w-full max-w-[170px] rounded-full bg-[#D8D6D0]">
                           <div
                             className="h-full rounded-full bg-[#141413] transition-[width] duration-700 ease-in-out"
                             style={{ width: `${value}%` }}

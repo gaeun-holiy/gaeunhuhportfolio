@@ -45,9 +45,9 @@ export function ErosDataVisualization() {
 
   return (
     <section className="relative min-h-screen w-full px-[101px] pb-[80px] pt-[116px] text-[#141413]">
-      <div className="grid grid-cols-[49vw_1fr] items-start gap-[20px]">
-        <div className="relative min-h-[690px] overflow-visible">
-          <div className="relative w-[1120px] max-w-none">
+      <div className="grid grid-cols-[820px_750px] items-start gap-[130px]">
+        <div className="relative min-h-[640px] overflow-visible">
+          <div className="relative w-[820px] max-w-none">
           <img
             src="/images/eros_ascii.svg"
             alt="EROS ASCII figure"
@@ -78,7 +78,7 @@ export function ErosDataVisualization() {
 
         <aside className="relative pt-[212px]">
           <span
-            className={`pointer-events-none absolute left-[-300px] top-[236px] h-px w-[274px] origin-left bg-[#141413]/45 transition-[opacity,transform] duration-1000 ease-in-out ${
+            className={`pointer-events-none absolute left-[-100px] top-[236px] h-px w-[74px] origin-left bg-[#141413]/45 transition-[opacity,transform] duration-1000 ease-in-out ${
               activeBundle ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"
             }`}
           />

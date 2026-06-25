@@ -120,7 +120,7 @@ export const films: Film[] = [
       subtitle: "Main Character Design",
       images: [
         "/images/EROS character devlp.png",
-        "/images/detective character devlp.png",
+        "/images/detectivec haracter devlp.png",
         "/images/board2.png"
       ]
     }

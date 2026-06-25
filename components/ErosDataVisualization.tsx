@@ -46,8 +46,8 @@ export function ErosDataVisualization() {
   return (
     <section className="relative min-h-screen w-full px-[101px] pb-[80px] pt-[116px] text-[#141413]">
       <div className="grid grid-cols-[49vw_1fr] items-start gap-[20px]">
-        <div className="relative min-h-[820px] overflow-visible">
-          <div className="relative w-[1340px] max-w-none">
+        <div className="relative min-h-[690px] overflow-visible">
+          <div className="relative w-[1120px] max-w-none">
           <img
             src="/images/eros_ascii.svg"
             alt="EROS ASCII figure"
@@ -78,13 +78,13 @@ export function ErosDataVisualization() {
 
         <aside className="relative pt-[212px]">
           <span
-            className={`pointer-events-none absolute left-[-318px] top-[190px] h-px w-[292px] origin-left bg-[#141413]/45 transition-[opacity,transform] duration-1000 ease-in-out ${
+            className={`pointer-events-none absolute left-[-300px] top-[236px] h-px w-[274px] origin-left bg-[#141413]/45 transition-[opacity,transform] duration-1000 ease-in-out ${
               activeBundle ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0"
             }`}
           />
 
           <div
-            className={`grid grid-cols-[330px_1fr] gap-[60px] transition-all duration-1000 ease-in-out ${
+            className={`grid grid-cols-[330px_360px] gap-[60px] transition-all duration-1000 ease-in-out ${
               activeBundle
                 ? "translate-x-0 translate-y-0 opacity-100"
                 : "translate-x-[-18px] translate-y-[8px] opacity-0"
@@ -114,9 +114,9 @@ export function ErosDataVisualization() {
                     const value = activeBundle[field.key];
 
                     return (
-                      <div key={field.key} className="mb-[32px] grid grid-cols-[190px_1fr] items-center gap-[42px]">
+                      <div key={field.key} className="mb-[32px] grid grid-cols-[190px_170px] items-center gap-[28px]">
                         <p className="runtime text-[16px] tracking-[0.08em]">{field.label}</p>
-                        <div className="h-[7px] rounded-full bg-[#141413]/5">
+                        <div className="h-[8px] w-[170px] rounded-full bg-[#D8D6D0]">
                           <div
                             className="h-full rounded-full bg-[#141413] transition-[width] duration-700 ease-in-out"
                             style={{ width: `${value}%` }}

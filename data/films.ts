@@ -93,7 +93,7 @@ export const films: Film[] = [
     ],
     captionEn:
       "A documentary on MVRK House's first public event. With member interviews at its center, the core challenge was designing an interview system flexible enough to hold ten pioneers from ten different fields — listening, reframing, and returning each question in real time on site.",
-    detailImages: ["/images/ourmvrkzip.png", "/images/mvrkt.png"]
+    detailImages: ["/images/ourmvrkzip.png", "/images/mvrkt.jpg"]
   },
   {
     slug: "eros",

@@ -15,6 +15,7 @@ export type Film = {
     heading?: string;
     text: string;
   }>;
+  detailImages?: string[];
   characterDesign?: {
     title: string;
     subtitle: string;
@@ -53,6 +54,7 @@ export const films: Film[] = [
     ],
     captionEn:
       "A short film adapting Seok-je Sung's novel \"The Invisible Man\" into 2020s Seoul. The invisible man here is not a marginalized figure but a quiet, unseen presence beside us — strong enough to become a support for those they love.",
+    detailImages: ["/images/minhas.png"],
     needsMp4Conversion: true
   },
   {
@@ -121,7 +123,9 @@ export const films: Film[] = [
       images: [
         "/images/EROS character devlp.png",
         "/images/d character devlp.png",
-        "/images/board2.png"
+        "/images/board2.png",
+        "/images/dd.png",
+        "/images/ff.png"
       ]
     }
   }

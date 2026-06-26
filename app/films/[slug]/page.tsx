@@ -101,7 +101,7 @@ export default async function FilmDetailPage({ params }: FilmPageProps) {
             <p className="font-en mt-[8.4px] text-[14px] leading-[16.8px]">
               {film.characterDesign.subtitle}
             </p>
-            <div className="mt-[16.8px] flex w-full max-w-[620px] flex-col gap-[16.8px]">
+            <div className="mt-[16.8px] flex w-full flex-col gap-[16.8px]">
               {film.characterDesign.images.map((image) => (
                 <img
                   key={image}
@@ -112,6 +112,19 @@ export default async function FilmDetailPage({ params }: FilmPageProps) {
               ))}
             </div>
           </section>
+        ) : null}
+
+        {film.detailImages ? (
+          <div className="mt-[50.4px] flex w-full flex-col gap-[16.8px]">
+            {film.detailImages.map((image) => (
+              <img
+                key={image}
+                src={encodeURI(image)}
+                alt=""
+                className="block h-auto w-full bg-[#B3B3B3]"
+              />
+            ))}
+          </div>
         ) : null}
 
         <Link href="/films/" className="font-en mt-[33.6px] inline-block">

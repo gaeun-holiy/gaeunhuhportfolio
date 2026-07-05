@@ -5,3 +5,4 @@ work/npm-cache/
 public/videos/
 *.tsbuildinfo
 .DS_Store
+*.ai
